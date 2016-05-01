@@ -1,36 +1,17 @@
 # timestable
 
-FIXME: description
+Application cycling throgh times tables and rendering them on a circle
 
-## Installation
+n points are distributed evenly on the edge of a circle, numbered 0..n-1
+Each point k is multiplied by a factor (mod n), resulting in a number x. Now a
+line is drawn between point k and the point representing the number x.
 
-Download from http://example.com/FIXME.
+The factor is being changed between renders, resulting in an animation.
 
 ## Usage
 
-FIXME: explanation
-
     $ java -jar timestable-0.1.0-standalone.jar [args]
 
-## Options
+or
 
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2016 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+    $ lein run
